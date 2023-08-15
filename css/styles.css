@@ -48,14 +48,14 @@ img {
 }
 
 .container {
-    margin-top: 5rem;
+    
     width: max(100%, 60%);
     
 }
 
 
 main {
-    padding: 2rem;
+    padding: 1rem;
     background: hsl(0, 0%, 100%);
     flex-grow: 1;
     border-bottom-left-radius: var(--border-rounded);
@@ -68,7 +68,7 @@ main {
 }
 
 .info__title {
-    font-size: clamp(1.5rem, 1vw, 2rem);;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);;
     margin-top: 1rem;
     font-weight: 900;
     color: var(--Dark-blue);
@@ -85,8 +85,6 @@ main {
 
 .plan {
     margin-top: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     border-radius: var(--border-rounded);
     padding: 1rem;
     display: flex;
@@ -127,8 +125,6 @@ main {
 
 .payment {
     margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .payment__btn {
@@ -198,7 +194,23 @@ main {
 @media screen and (min-width: 1200px) {
     
     .container {
+        margin-top: 5rem;
         width: min(100%, 30%)
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .plan {
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .payment {
+        margin-left: 1rem;
+        margin-right: 1rem;
+
     }
 }
 @media screen and (min-width: 1400px) {
@@ -207,10 +219,12 @@ main {
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
-        background-position-y: -100px;
+        background-position-y: -200px;
     }
     .container {
         width: min(100%, 30%)
     }
+
+
 }
 
